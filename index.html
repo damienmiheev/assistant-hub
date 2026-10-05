@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>assistant-hub</title>
+<style>
+  :root { --bg:#fafaf7; --fg:#1d1d1b; --muted:#6b6b66; --line:#e4e2dc; --accent:#2f5d50; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151514; --fg:#ecebe6; --muted:#a3a29b; --line:#2c2b29; --accent:#8cc5b2; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 ui-sans-serif, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width:640px; margin:0 auto; padding:72px 20px 48px; }
+  h1 { font-size:28px; letter-spacing:-.01em; margin:0 0 8px; }
+  .lead { color:var(--muted); margin:0 0 40px; }
+  h2 { font-size:15px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); margin:40px 0 12px; }
+  ul { padding-left:20px; margin:0; }
+  li { margin:6px 0; }
+  a { color:var(--accent); }
+  footer { border-top:1px solid var(--line); margin-top:56px; padding-top:16px; color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>assistant-hub</h1>
+  <p class="lead">A private, self-hosted personal assistant used by one person — its owner. It is not a public service and does not accept other users.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Reads the owner's Gmail to spot bills, due dates, subscriptions and notable messages.</li>
+    <li>Sends the owner short summaries and reminders in a private Telegram chat.</li>
+    <li>Prepares email drafts for the owner to review and send manually. It cannot send or delete email.</li>
+  </ul>
+
+  <h2>Google access</h2>
+  <ul>
+    <li><code>gmail.readonly</code> — to read messages.</li>
+    <li><code>gmail.compose</code> — to create drafts only.</li>
+  </ul>
+
+  <footer>
+    <a href="privacy.html">Privacy policy</a> · Contact: damienmiheev@gmail.com
+  </footer>
+</main>
+</body>
+</html>
